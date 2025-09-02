@@ -8,15 +8,15 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public class Dish
     {
-        public string name { get; private set; }
-        public int price  { get; private set; }
-        public bool isVegetarian  { get; private set; }
+        public string Name { get; private set; }
+        public int Price  { get; private set; }
+        public bool IsVegetarian  { get; private set; }
 
         public Dish(string name, int price, bool isVegetarian)
         {
-            this.name = name;
-            this.price = price;
-            this.isVegetarian = isVegetarian;
+            this.Name = name;
+            this.Price = price;
+            this.IsVegetarian = isVegetarian;
         }
         
     }
