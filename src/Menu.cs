@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Ucu.Poo.Restaurant
@@ -9,5 +10,23 @@ namespace Ucu.Poo.Restaurant
     public class Menu
     {
         private List<Dish> dishes = new List<Dish>();
+
+        public void AddDish(Dish añadir)
+        {
+            dishes.Add(añadir);
+        }
+        public void RemoveDish(Dish quitar)
+        {
+            dishes.Remove(quitar);
+        }
+        public Dish GetDishByName(Dish obtener)
+        {
+            if (dishes.Contains(obtener))
+            {
+                return (obtener);
+            }
+
+            return null;
+        }
     }
 }
