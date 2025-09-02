@@ -19,11 +19,14 @@ namespace Ucu.Poo.Restaurant
         {
             dishes.Remove(quitar);
         }
-        public Dish GetDishByName(Dish obtener)
+        public Dish GetDishByName(string obtener)
         {
-            if (dishes.Contains(obtener))
+            foreach (Dish item in this.dishes)
             {
-                return (obtener);
+                if (obtener == item.Name)
+                {
+                    return item;
+                }
             }
 
             return null;
