@@ -12,7 +12,6 @@ namespace Ucu.Poo.Restaurant.Tests
             double price, bool isVegetarian)
         {
             Dish dish = new Dish(name, price, isVegetarian);
-
             Assert.That(dish.Name, Is.EqualTo(name));
             Assert.That(dish.Price, Is.EqualTo(price));
             Assert.That(dish.IsVegetarian, Is.EqualTo(isVegetarian));
